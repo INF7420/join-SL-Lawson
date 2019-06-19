@@ -5,22 +5,26 @@
   <meta name="Description" content="INF 7420 Project">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stephanie L Lawson - Portfolio</title>
+  <link rel="stylesheet" href="styles/portfolio-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Martel&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    
-    <nav>
-      <img src="images/my-profile-pic.jpg" alt="Stephanie L Lawson logo">
-      <div> <h1>"Stephanie L Lawson - Contact Me"</h1>
-      </div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+    <header>
+        <img class="logo" src="images/my-profile-pic.jpg" alt="Stephanie L Lawson logo">
+        <h1 class="page-title">Stephanie L Lawson - Portfolio</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+          </label>
+    </header>
+  <main class="contact-form">
       <form action="/contact" method="message">
         <p>
           <label>Full Name</label><br>
@@ -46,7 +50,7 @@
   </main>
   <footer>
       <div> 
-          <p>&copy; 2019 Stephanie L Lawson</p>
+          <p id="copyright">&copy; 2019 Stephanie L Lawson</p>
         </div>
         <div> 
           <button>
