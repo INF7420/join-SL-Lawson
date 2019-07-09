@@ -1,5 +1,5 @@
 /*portfolio-style.css by Stephanie Lawson*/
-
+@import url('https://fonts.googleapis.com/css?family=Martel&display=swap');
 
 
 * {
@@ -14,13 +14,13 @@
     margin: 0;
   }
 
-body {
+/*body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 200px;
     margin: 10px 10px 10px 10px;
-}
+}*/
 
 header {
     background-color: rgb(231, 217, 198);
@@ -29,7 +29,7 @@ header {
     z-index: 999;
     width: 100%; 
     margin: 0;
-    height: 75px; 
+    height: 95px; 
 }
 
 nav {
@@ -81,7 +81,7 @@ nav a:hover {
 .nav-toggle-label {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     margin-right: 1em;
     height: 100%;
     display: flex;
@@ -122,12 +122,13 @@ nav a:hover {
         display: none;
     }
     header {
-        display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 3fr)
+        display: flex;
+        justify-content: space-between;
     }
 
     .logo {
-        grid-column: 1 / 2;
+        display: flex;
+        float: left;
     }
     nav {
         all: unset;
@@ -140,7 +141,7 @@ nav a:hover {
     nav ul {
         display: flex;
         justify-content: flex-end;
-        border: 1px solid red;
+        
     }
 
     nav li { 
@@ -155,12 +156,13 @@ nav a:hover {
 
 
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
     min-width: 60px;
     margin-left: 10px;
     margin-top: 8px;
     margin-bottom: 7px;
+    float: left;
 }
 
 .page-title {
@@ -197,19 +199,22 @@ body {
 
 .my-video {
     margin: 0 auto;
-	border: 20px groove #ddd;
+    border: 20px groove #ddd; 
     
 }
  
 
 #lib-program2 {
     float: left;
-    margin: 0 2em 1em 1em;
+    margin: 3em 2em 1em 1em;
 }
 h1 {
-        font-size: 32px;
+        display: flex;
+        font-size: 1.6em;
     }
-#page-title {
+
+.page-title {
+
         display: flex;
         flex: left;
         
@@ -229,6 +234,11 @@ h1 {
 h2 {
         font-size: 24px;
     }
+
+#introduction {
+    margin: 5px auto;
+    padding: 1em;
+}
 .box {
     display: flex;
     flex-wrap: wrap;
@@ -246,23 +256,27 @@ h2 {
       width: 50%;
     }
   }
+
   @media all and (min-width: 60em) {
     .list-item2 {
       width: 33.33%;
     }
   }
+
   .list-item2 {
     display: flex; 
-    padding: 0.5em;
+    padding: 1em;
     width: 33.33333%;
   }
+
   .list-content2 {
     display: flex;
     flex-direction: column;
     background-color: #FFFAF0;
-    padding: 1em;
-    width: 100;
+    padding: 2em;
+    width: 100%;
  }
+
  .list-content2 p {
    flex: 1 0 auto;
  }
@@ -272,17 +286,37 @@ h2 {
     display: flex;
     flex: left;
     flex-direction: row;
-    margin: 1em 1em 1em 1em;
+    margin: 7em 3em 7em 3em;
     border: 2px;
 }
-#minecraft-club {
-        display: flex;
-        flex: left;
-        flex-direction: row;
-        margin: 1em;
-        border: 2px;
-        max-width: 100%;
+
+
+
+.about-image {
+    display: flex;
+    justify-content: space-evenly;
+    
 }
+
+#minecraft-club {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    border: 2px;
+    width: 45%;
+    
+} 
+
+#lib-program3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em;
+    border: 2px;
+    max-width: 45%;
+    
+}
+
 a {
     color: blue;
     text-decoration: none;
@@ -290,6 +324,33 @@ a {
 a:hover {
     color: #8484f5;
 }
+
+
+#resume {
+    display: flex;
+    float: right;
+    width: 200px;
+    height: 20px;
+    margin: 2px 2px;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+   
+    margin: 25px auto;
+    padding: 1em;
+    border: 1px solid rgb(231, 217, 198);
+    border-radius: 1em;
+    width: 100%;
+  }
+
+  input, textarea {
+    
+    font: 1em sans-serif;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
 input {
     font-size: 120%;
     color: #5a5854;
@@ -299,17 +360,35 @@ input {
     padding: 5px 5px 5px 30px;
     background-repeat: no-repeat;
     background-position: 8px 9px;
-    display: block;
-    margin-bottom: 10px;}
-
-.contact-form {
     display: flex;
-    flex: row;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
 }
-    
-.copyright {
+#text {
+    font-size: 120%;
+    color: #5a5854;
+    background-color: #FFFAF0;
+    border: 1px solid rgb(231, 217, 198);
+    width: 100%;
+}
+
+#submit {
+    width: 200px;
+    height: 40px;
+}
+
+footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    color:black;
+}
+
+#copyright {
     display: flex;
-    position: static;
+    flex-wrap: wrap;
+    
 
 }
 
