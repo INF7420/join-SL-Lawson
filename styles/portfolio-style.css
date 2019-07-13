@@ -58,7 +58,7 @@ nav li {
 nav a {
     color:#0000CD;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
@@ -198,8 +198,9 @@ body {
   }
 
 .my-video {
-    margin: 0 auto;
-    border: 20px groove #ddd; 
+    margin-top: 1.5em;
+    margin: 5px auto;
+    border: 5px groove #ddd; 
     
 }
  
@@ -219,6 +220,14 @@ h1 {
         flex: left;
         
     }
+
+.video-banner {
+    background-color: #D8BFD8;
+    width: 100%;
+    height: 20%;
+    border-top: 0px cyan;
+    border-bottom: 1px cyan;
+}
 .vertical-container {
         height: 300px;
         display: -webkit-flex;
@@ -290,32 +299,19 @@ h2 {
     border: 2px;
 }
 
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 
-.about-image {
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-
-#minecraft-club {
-    display: flex;
-    flex-direction: row;
-    margin: 1em;
-    border: 2px;
-    width: 45%;
-    
-} 
-
-#lib-program3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 1em;
-    border: 2px;
-    max-width: 45%;
-    
-}
 
 a {
     color: blue;
@@ -341,7 +337,13 @@ a:hover {
     padding: 1em;
     border: 1px solid rgb(231, 217, 198);
     border-radius: 1em;
-    width: 100%;
+    width: 75%;
+  }
+
+  .contact-form:focus
+   {
+    outline: none;
+    border: 2px solid #1565C0;
   }
 
   input, textarea {
@@ -349,6 +351,7 @@ a:hover {
     font: 1em sans-serif;
     box-sizing: border-box;
     border: 1px solid #999;
+    border-radius: 5px;
   }
   
 input {
@@ -376,8 +379,21 @@ input {
 
 #submit {
     width: 200px;
-    height: 40px;
+    height: 60px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .5em;
 }
+
+[type="submit"]:hover {
+    background-color: #0D47A1;
+    color: #FFFAF0;  
+  }
 
 footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -388,10 +404,17 @@ footer {
 #copyright {
     display: flex;
     flex-wrap: wrap;
-    
-
+    margin: 1em;
 }
 
+.error {
+    border-color: #C62828;
+  }
+
+.error-message {
+    margin: -1em 0 1em;
+    color: #C62828;
+  }
 
 
 
