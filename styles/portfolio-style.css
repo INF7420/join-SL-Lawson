@@ -244,6 +244,10 @@ h2 {
         font-size: 24px;
     }
 
+.list-content2p, p {
+    color: #191970;
+}
+
 #introduction {
     margin: 5px auto;
     padding: 1em;
@@ -271,6 +275,8 @@ h2 {
       width: 33.33%;
     }
   }
+
+  
 
   .list-item2 {
     display: flex; 
