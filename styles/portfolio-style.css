@@ -14,14 +14,6 @@
     margin: 0;
   }
 
-/*body {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 200px;
-    margin: 10px 10px 10px 10px;
-}*/
-
 header {
     background-color: rgb(231, 217, 198);
     text-align: center;
@@ -34,7 +26,7 @@ header {
 
 nav {
     position: absolute;
-    text-align: left;
+    text-align: right;
     top: 100%;
     left: 0;
     background: rgb(231, 217, 198);
@@ -197,9 +189,12 @@ body {
     width: 20px;
   }
 
+ 
+
 .my-video {
-    margin-top: 1.5em;
-    margin: 5px auto;
+    
+    vertical-align: middle;
+    margin-top: 5px auto;
     border: 5px groove #ddd; 
     
 }
@@ -225,8 +220,7 @@ h1 {
     background-color: #D8BFD8;
     width: 100%;
     height: 20%;
-    border-top: 0px cyan;
-    border-bottom: 1px cyan;
+   
 }
 .vertical-container {
         height: 300px;
@@ -317,6 +311,17 @@ h2 {
     display: table;
   }
 
+#minecraft-club {
+    margin-top: 1.5em;
+    margin: 5px auto;
+    border: 5px;
+}
+
+#summer-lunch {
+    margin-top: 1.5em;
+    margin: 5px auto;
+    border: 5px;
+}
 
 
 a {
@@ -421,6 +426,56 @@ footer {
     margin: -1em 0 1em;
     color: #C62828;
   }
+
+  @supports (display: grid) {
+    main { 
+      max-width: 10000px;
+      margin: 0;
+    }
+    article {
+      margin: 0;
+    }
+    .artifacts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 1rem;
+    }
+  }
+    
+  .artifacts {
+    font-family: Avenir, Roboto, Helvetica, san-serif; 
+    font-size: 80%;
+  }
+  .library-item {
+    display: flex;
+    flex-flow: column;
+    border:  1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  .library-item > h1 {
+    margin: 1rem 1rem 0;
+  }
+  .library-item > ul {
+    margin: 0 0 1rem;
+  }
+  .library-item > p {
+    margin: 0.25em 1rem 1rem;
+  }
+  .library-item > img {
+    order: -1;
+    align-self: center;
+  }
+  .library-item > button {
+    margin-top: auto; 
+    background: #D8BFD8;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+  }
+  
 
 
 
